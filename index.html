@@ -89,7 +89,7 @@
         .intro-myself-child2{
             flex-grow: 1;
         }
-        .intro-myself-child1 p{
+        .important{
             font-size: 20px;
             font-weight: 300;
         }   
@@ -142,6 +142,17 @@
             font-weight: 600;
             cursor: pointer;
         }
+        .para{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .intro-endline{
+            margin-top: 20px;
+            width: 80%;
+            margin-bottom: 20px;
+            margin-left: 10%;
+        }
         @media screen and (max-width:1020px) {
             .intro-myself-child1{
                 flex-grow: 1;
@@ -160,6 +171,21 @@
             .intro-myself-child2{
                 width: 100%;
                 flex-grow: 1;
+            }
+            ul{
+                display: none;
+            }
+        }
+        @media screen and (max-width:420px) {
+            .intro-myself-child1{
+                flex-grow: 0;
+                display: block;
+            }
+            .tamil{
+                font-size: 17px;
+            }
+            .intro-myself-child1 font{
+                font-size: 35px;
             }
         }
     </style>
@@ -183,8 +209,8 @@
         </div>
         <div class="intro-myself">
             <div class="intro-myself-child1">
-                <p>Hello It's Me <br><font>Tamil Muhilan !</font><br>And I'm a <label class="tamil"></label></p>
-                <p>A passionate frontend developer and aspiring <br>full stack developer
+                <p class="important">Hello It's Me <br><font>Tamil Muhilan...</font><br>And I'm a <label class="tamil"></label></p>
+                <p class="para">A passionate frontend developer and aspiring <br>full stack developer
                      Explore my portfolio to see some of my experiences <br>
                 </p>
                 <div class="intro-myself-child1-socialmedia">
@@ -205,13 +231,16 @@
         </div>
         <script>
             var type=new Typed(".tamil",{
-                strings:["Front-end Developer"],
+                strings:["Front-end Developer !","Freelancer !"],
                 typeSpeed:100,
                 typeDelay:100,
                 backDelay:1000,
                 loop:true
             })
         </script>
+    </div>
+    <div class="intro-endline">
+        <hr>
     </div>
 </body>
 </html>
