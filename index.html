@@ -154,6 +154,9 @@
             margin-bottom: 20px;
             margin-left: 10%;
         }
+        .material-symbols-outlined{
+            display: none;
+        }
         @media screen and (max-width:1020px) {
             .intro-myself-child1{
                 flex-grow: 1;
@@ -173,8 +176,18 @@
                 width: 100%;
                 flex-grow: 1;
             }
-            ul{
+            li{
                 display: none;
+            }
+            .navbar{
+                /* border: 3px solid #0ef; */
+                position: relative;
+            }
+            .material-symbols-outlined{
+                display: block;
+                position: absolute;
+                left: 80%;
+                top: 30px;
             }
         }
         @media screen and (max-width:420px) {
@@ -211,6 +224,7 @@
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
+                    <span class="material-symbols-outlined">menu</span>
                 </ul>
             </div>
         </div>
