@@ -142,11 +142,13 @@
             font-weight: 600;
             cursor: pointer;
             margin-bottom: 20px;
+            box-shadow: 0 0 20px #0ef;
         }
         .para{
             margin-top: 10px;
             margin-bottom: 10px;
             font-size: 18px;
+            text-transform: capitalize;
         }
         .intro-endline{
             margin-top: 20px;
@@ -209,6 +211,849 @@
                 margin-left: 10%;
             }
         }
+        .about-me-heading{
+            /* border: 3px solid #0ef; */
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-underline-offset: 10px;
+            margin-bottom: 20px;
+        }
+        .about-me-heading h1{
+            font-weight: 400;
+            font-size: 40px;
+        }
+        .about-me-heading h1 font{
+            color: #0ef;
+        }
+        .about-me{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 0px;
+            flex-wrap: wrap;
+            /* border: 3px solid #0ef; */
+        }
+        .intro-image{
+            flex-grow: 1;
+            margin-bottom: 20px;
+        }
+        .intro-image img{
+            border: 3px solid #0ef;
+            border-radius: 50%;
+            box-shadow: 0 0 30px #0ef;
+        }
+        .about-me-info{
+            /* border: 3px solid #0ef; */
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 2;
+        }
+        .about-me-info p{
+            padding: 0 20px;
+            font-size: 20px;
+            font-weight: 300;
+            text-transform: capitalize;
+        }
+        .about-me-info p font{
+            color: #0ef;
+            font-weight: 500;
+        }
+        .about-main-word-interest{
+            width: 100%;
+            margin-top: 20px;
+        }
+        .about-main-word-interest h2{
+            text-transform: uppercase;
+            color: #0ef;
+            text-decoration: underline;
+            text-underline-offset: 10px;
+        }
+        .interests-list{
+            margin-top: 20px;
+        }
+        .interests-list button{
+            margin-right: 20px;
+            padding: 8px;
+            border-radius: 40px;
+            background-color: #0ef;
+            border: 3px solid #0ef;
+            /* box-shadow: 0 0 20px #0ef; */
+            cursor: pointer;
+        }
+        .about-me-more-aboutme{
+            width: 100%;
+            margin-top: 40px;
+        }
+        .about-me-more-aboutme button{
+            padding: 8px;
+            border: 3px solid #0ef;
+            background-color: #0ef;
+            font-weight: 600;
+            border-radius: 40px;
+            cursor: pointer;
+        }
+        .about-me-more-aboutme button:hover{
+            box-shadow: 0 0 20px #0ef;
+        }
+        .about-me-endline{
+            margin-top: 20px;
+            width: 80%;
+            margin-bottom: 20px;
+            margin-left: 10%;
+        }
+        @media screen and (max-width:1020px) {
+            .intro-image{
+                flex-grow: 0;
+            }
+            .interests-list{
+                display: flex;
+                padding-left: 10px;
+                justify-content: center;
+            }
+            .about-me-more-aboutme{
+                text-align: center;
+            }
+            .about-main-word-interest{
+                text-align: center;
+            }
+
+        }
+        @media screen and (max-width:750px) {
+            .intro-image{
+                flex-grow: 1;
+            }
+            .interests-list{
+                display: flex;
+                padding-left: 10px;
+                justify-content: center;
+            }
+            .about-me-more-aboutme{
+                text-align: center;
+            }
+            .about-main-word-interest{
+                text-align: center;
+            }
+        }
+        @media screen and (max-width:420px) {
+            .intro-image{
+                flex-grow: 1;
+            }
+            .intro-image img{
+                height: 60vh;
+            }
+            .about-me-info p{
+                font-size: 15px;
+            }
+            .about-main-word-interest{
+                text-align: center;
+            }
+            .interests-list button{
+                font-size: 10px;
+            }
+        }
+        .education{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .education-heading h2{
+            font-size: 50px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        .education-heading-icons{
+            margin-top: 10px; 
+            text-align: center;         
+        }
+        .education-heading-icons i{
+            margin-right: 20px;
+            font-size: 25px;
+            border: 3px solid #0ef;
+            padding: 8px;
+            border-radius: 50%;
+            color: #0ef;
+        }
+        .education-heading-icons i:hover{
+            background-color: #0ef;
+            color: black;
+            box-shadow: 0 0 20px #0ef;
+            transition: 1s;
+            transform: rotateZ(360deg);
+        }
+        .education-details-year{
+            font-size: 40px;
+            color: transparent;
+            -webkit-text-stroke: 2px #0ef;
+        }
+        .education-child2{
+            padding: 20px;
+            /* border: 3px solid #0ef; */
+        }
+        .education-details-information-school-name{
+            font-weight: 500;
+            font-size: 20px;
+        }
+        .education-details-information-school-purpose{
+            font-weight: 300;
+        }
+        .education-details-information-college{
+            margin-top: 30px;
+        }
+        .education-details-information-college-name{
+            font-weight: 500;
+            font-size: 20px;
+        }
+        .education-details-information-college-purpose{
+            font-weight: 300;
+        }
+        .education-details-information-achievement{
+            margin-top: 30px;
+        }
+        .education-details-information-achievement-heading{
+            font-weight: 500;
+            font-size: 20px;
+        }
+        .education-details-information-achievement-goals{
+            font-weight: 300;
+        }
+        .education-details-information-achievement-goals font{
+            color: #0ef;
+            font-weight: 350;
+            font-size: 16px;
+        }
+        .education-more-aboutme{
+            margin-top: 50px;
+        }
+        .education-more-aboutme button{
+            background-color: #0ef;
+            padding: 10px;
+            border-radius: 40px;
+            cursor: pointer;
+            border: 3px solid #0ef;
+            font-weight: 600;
+        }
+        .education-more-aboutme button:hover{
+            box-shadow: 0 0 20px #0ef;
+        }
+        .education-endline{
+            margin-top: 20px;
+            width: 80%;
+            margin-left: 10%;
+        }
+        @media screen and (max-width:750px) {
+            .education-child2{
+                display: flex;
+                flex-direction: column;
+            }
+            .education-more-aboutme{
+                text-align: center;
+            }
+        }
+        @media screen and (max-width:450px) {
+            .education-details-year{
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+        @media screen and (max-width:350px) {
+            .education-details-year{
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+        .skills-heading{
+            text-align: center;
+            margin-top: 15px;  
+        }
+        .skills-heading h1{
+            font-size: 50px;
+            font-weight: 400;
+            text-decoration: underline;
+            text-underline-offset: 10px;
+        }
+        .skills-heading h1 font{
+            color: #0ef;
+        }
+        .skills-container{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .technical{
+            /* border: 3px solid #0ef; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .technical-title{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .technical-title h1{
+            font-weight: 400;
+        }
+        .html{
+            /* margin-left: 25%; */
+            margin-top: -20px;
+            margin-bottom: 40px;
+        }
+        .html .html-logo{
+            font-size: 25px;
+        }
+        .html .html-name{
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        .html .html-percentage{
+            margin-left: 380px;
+            margin-top: -35px;
+        }
+        .html .outer{
+            width: 400px;
+            height: 5px;
+            box-shadow: 0 0 30px #0ef;
+            background-color: black;
+        }
+        .html .inner{
+            width: 100%;
+            height: 5px;
+            background-color: #0ef;
+            animation: htmlanimate 3s linear forwards;
+        }
+        @keyframes htmlanimate{
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 100%;
+            }
+        }
+        @media screen and (max-width:450px) {
+            .html .outer{
+                width: 300px;
+            }
+            .html .html-percentage{
+                margin-left: 280px;
+            }
+            
+        }
+        .css{
+            /* margin-left: 25%; */
+            margin-top: -20px;
+            margin-bottom: 40px;
+        }
+        .css .css-logo{
+            font-size: 25px;
+        }
+        .css .css-name{
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        .css .css-percentage{
+            margin-left: 380px;
+            margin-top: -35px;
+        }
+        .css .outer{
+            width: 400px;
+            height: 5px;
+            box-shadow: 0 0 30px #0ef;
+            background-color: black;
+        }
+        .css .inner{
+            width: 90%;
+            height: 5px;
+            background-color: #0ef;
+            animation: cssanimate 3s linear forwards;
+        }
+        @keyframes cssanimate{
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 90%;
+            }
+        }
+        @media screen and (max-width:450px) {
+            .css .outer{
+                width: 300px;
+            }
+            .css .css-percentage{
+                margin-left: 280px;
+            }
+        }
+        .javascript{
+            /* margin-left: 25%; */
+            margin-top: -20px;
+            margin-bottom: 40px;
+        }
+        .javascript .javascript-logo{
+            font-size: 25px;
+        }
+        .javascript .javascript-name{
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        .javascript .javascript-percentage{
+            margin-left: 380px;
+            margin-top: -35px;
+        }
+        .javascript .outer{
+            width: 400px;
+            height: 5px;
+            box-shadow: 0 0 30px #0ef;
+            background-color: black;
+        }
+        .javascript .inner{
+            width: 65%;
+            height: 5px;
+            background-color: #0ef;
+            animation: javascriptanimate 3s linear forwards;
+        }
+        @keyframes javascriptanimate{
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 65%;
+            }
+        }
+        @media screen and (max-width:450px) {
+            .javascript .outer{
+                width: 300px;
+            }
+            .javascript .javascript-percentage{
+                margin-left: 280px;
+            }
+        }
+        .react{
+            /* margin-left: 25%; */
+            margin-top: -20px;
+            margin-bottom: 40px;
+        }
+        .react .react-logo{
+            font-size: 25px;
+        }
+        .react .react-name{
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        .react .react-percentage{
+            margin-left: 380px;
+            margin-top: -35px;
+        }
+        .react .outer{
+            width: 400px;
+            height: 5px;
+            box-shadow: 0 0 30px #0ef;
+            background-color: black;
+        }
+        .react .inner{
+            width: 10%;
+            height: 5px;
+            background-color: #0ef;
+            animation: reactanimate 1s linear forwards;
+        }
+        @keyframes reactanimate{
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 10%;
+            }
+        }
+        @media screen and (max-width:450px) {
+            .react .outer{
+                width: 300px;
+            }
+            .react .react-percentage{
+                margin-left: 280px;
+            }
+        }
+        .python{
+            /* margin-left: 25%; */
+            margin-top: -20px;
+            margin-bottom: 40px;
+        }
+        .python .python-logo{
+            font-size: 25px;
+        }
+        .python .python-name{
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        .python .python-percentage{
+            margin-left: 380px;
+            margin-top: -35px;
+        }
+        .python .outer{
+            width: 400px;
+            height: 5px;
+            box-shadow: 0 0 30px #0ef;
+            background-color: black;
+        }
+        .python .inner{
+            width: 70%;
+            height: 5px;
+            background-color: #0ef;
+            animation: pythonanimate 2s linear forwards;
+        }
+        @keyframes pythonanimate{
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 70%;
+            }
+        }
+        @media screen and (max-width:450px) {
+            .python .outer{
+                width: 300px;
+            }
+            .python .python-percentage{
+                margin-left: 280px;
+            }
+        }
+        .mysql{
+            /* margin-left: 25%; */
+            margin-top: -20px;
+            margin-bottom: 40px;
+        }
+        .mysql .mysql-logo{
+            font-size: 25px;
+        }
+        .mysql .mysql-name{
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        .mysql .mysql-percentage{
+            margin-left: 380px;
+            margin-top: -35px;
+        }
+        .mysql .outer{
+            width: 400px;
+            height: 5px;
+            box-shadow: 0 0 30px #0ef;
+            background-color: black;
+        }
+        .mysql .inner{
+            width: 50%;
+            height: 5px;
+            background-color: #0ef;
+            animation: mysqlanimate 2s linear forwards;
+        }
+        @keyframes mysqlanimate{
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 50%;
+            }
+        }
+        @media screen and (max-width:450px) {
+            .mysql .outer{
+                width: 300px;
+            }
+            .mysql .mysql-percentage{
+                margin-left: 280px;
+            }
+        }
+        .mongodb{
+            /* margin-left: 25%; */
+            margin-top: -20px;
+            margin-bottom: 40px;
+        }
+        .mongodb .mongodb-logo{
+            font-size: 25px;
+        }
+        .mongodb .mongodb-name{
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        .mongodb .mongodb-percentage{
+            margin-left: 380px;
+            margin-top: -35px;
+        }
+        .mongodb .outer{
+            width: 400px;
+            height: 5px;
+            box-shadow: 0 0 30px #0ef;
+            background-color: black;
+        }
+        .mongodb .inner{
+            width: 5%;
+            height: 5px;
+            background-color: #0ef;
+            animation: mongodbanimate 0.5s linear forwards;
+        }
+        @keyframes mongodbanimate{
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 5%;
+            }
+        }
+        @media screen and (max-width:450px) {
+            .mongodb .outer{
+                width: 300px;
+            }
+            .mongodb .mongodb-percentage{
+                margin-left: 280px;
+            }
+        }
+        .nodejs{
+            /* margin-left: 25%; */
+            margin-top: -20px;
+            margin-bottom: 40px;
+        }
+        .nodejs .nodejs-logo{
+            font-size: 25px;
+        }
+        .nodejs .nodejs-name{
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        .nodejs .nodejs-percentage{
+            margin-left: 380px;
+            margin-top: -35px;
+        }
+        .nodejs .outer{
+            width: 400px;
+            height: 5px;
+            box-shadow: 0 0 30px #0ef;
+            background-color: black;
+        }
+        .nodejs .inner{
+            width: 5%;
+            height: 5px;
+            background-color: #0ef;
+            animation: nodejsanimate 0.5s linear forwards;
+        }
+        @keyframes nodejsanimate{
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 5%;
+            }
+        }
+        @media screen and (max-width:450px) {
+            .nodejs .outer{
+                width: 300px;
+            }
+            .nodejs .nodejs-percentage{
+                margin-left: 280px;
+            }
+        }
+        .professional-heading{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .professional-heading h1{
+            font-weight: 400;
+        }
+        .professional-communication .container{
+            position: relative;
+        }
+        .professional-communication .outer{
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 0 10px #0ef;
+        }
+        .professional-communication .inner{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            box-shadow: inset 0 0 10px #0ef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .professional-communication .inner #number{
+            font-weight: 500;
+        }
+        .professional-communication circle{
+            fill: none;
+            stroke: #0ef;
+            stroke-width: 11px;
+            stroke-dasharray: 260;
+            stroke-dashoffset: 260;
+            animation: animate 2s linear forwards;
+        }
+        @keyframes animate{
+            100%{
+                stroke-dashoffset: 35;
+            }
+        }
+        .professional-communication svg{
+            position: absolute;
+            top: -5px;
+            left: -4.8px;
+        }
+        .professional-problemsolving .container{
+            position: relative;
+        }
+        .professional-problemsolving .outer{
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 0 10px #0ef;
+        }
+        .professional-problemsolving .inner{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            box-shadow: inset 0 0 10px #0ef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .professional-problemsolving .inner #num{
+            font-weight: 500;
+        }
+        .professional-problemsolving circle{
+            fill: none;
+            stroke: #0ef;
+            stroke-width: 11px;
+            stroke-dasharray: 260;
+            stroke-dashoffset: 260;
+            animation: animat 2s linear forwards;
+        }
+        @keyframes animat{
+            100%{
+                stroke-dashoffset: 50;
+            }
+        }
+        .professional-problemsolving svg{
+            position: absolute;
+            top: -5px;
+            left: -4.8px;
+        }
+        .professional-creativity .container{
+            position: relative;
+        }
+        .professional-creativity .outer{
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 0 10px #0ef;
+        }
+        .professional-creativity .inner{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            box-shadow: inset 0 0 10px #0ef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .professional-creativity .inner #value{
+            font-weight: 500;
+        }
+        .professional-creativity circle{
+            fill: none;
+            stroke: #0ef;
+            stroke-width: 11px;
+            stroke-dasharray: 260;
+            stroke-dashoffset: 260;
+            animation: anima 2s linear forwards;
+        }
+        @keyframes anima{
+            100%{
+                stroke-dashoffset: 80;
+            }
+        }
+        .professional-creativity svg{
+            position: absolute;
+            top: -5px;
+            left: -4.8px;
+        }
+        .professional-teamwork .container{
+            position: relative;
+        }
+        .professional-teamwork .outer{
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 0 10px #0ef;
+        }
+        .professional-teamwork .inner{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            box-shadow: inset 0 0 10px #0ef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .professional-teamwork .inner #one{
+            font-weight: 500;
+        }
+        .professional-teamwork circle{
+            fill: none;
+            stroke: #0ef;
+            stroke-width: 11px;
+            stroke-dasharray: 260;
+            stroke-dashoffset: 260;
+            animation: anim 2s linear forwards;
+        }
+        @keyframes anim{
+            100%{
+                stroke-dashoffset: 40;
+            }
+        }
+        .professional-teamwork svg{
+            position: absolute;
+            top: -5px;
+            left: -4.8px;
+        }
+        .professional-skills{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 100px;
+            flex-wrap: wrap;
+            padding: 10px;
+            align-items: center;
+        }
+        .professional-problemsolving{
+            margin-top: 150px;
+        }
+        .professional-teamwork{
+            margin-top: 150px;
+        }
+        .professional-communication{
+            flex-basis: 50%;
+        }
+        .skills-more-about-me{
+            text-align: center;
+        }
+        .skills-more-about-me button{
+            background-color: #0ef;
+            padding: 10px;
+            border-radius: 40px;
+            cursor: pointer;
+            border: 3px solid #0ef;
+            font-weight: 600;
+        }
+        .skills-more-about-me button:hover{
+            box-shadow: 0 0 20px #0ef;
+        }
+        .skills-endline{
+            margin-top: 20px;
+            width: 80%;
+            margin-left: 10%;
+        }
     </style>
 </head>
 <body>
@@ -262,6 +1107,429 @@
         </script>
     </div>
     <div class="intro-endline">
+        <hr>
+    </div>
+    <div class="about-me-heading">
+        <h1>About <font>Me</font></h1>
+    </div>
+    <div class="about-me">
+        <div class="intro-image">
+            <img src="aboutimg.jpg" height="600px">
+        </div>
+        <div class="about-me-info">
+            <p><font>Hi...</font>I am a dedicated third-year student at <font>Nandha Engineering College</font> with a strong foundation in <font>frontend development</font>. <br>
+                I have completed comprehensive training in this area and have applied my skills in various projects. <br> 
+                Currently, I am expanding my expertise by studying <font>full stack development</font>, while simultaneously enhancing my proficiency in <font>UI/UX design</font>. <br>
+                My commitment to continuous learning and my passion for creating seamless <br>
+                user experiences drive me to stay updated with the latest industry trends and technologies.
+            </p>
+            <div class="about-main-word-interest">
+                <h2>Interests</h2>
+                <div class="interests-list">
+                    <button>Social Media</button>
+                    <button>Hearing Songs</button>
+                    <button>Wed Developing</button>
+                    <button>Browsing</button>
+                </div>
+            </div>
+            <div class="about-me-more-aboutme">
+                <button>More About Me</button>
+            </div>
+        </div>
+    </div>
+    <div class="about-me-endline">
+        <hr>
+    </div>
+    <div class="education">
+        <div class="education-child1">
+            <div class="education-heading">
+                <h2>Education</h2>
+                <div class="education-heading-icons">
+                    <a href="https://shreegurukulam.org/"><i class='bx bxs-school'></i></a>
+                    <a href="https://nandhaengg.org/"><i class='bx bxs-graduation'></i></a>
+                    <a href="https://www.justdial.com/Gobichettipalayam/Csc-Computer-Education-Gobichettipalayam-HO/9999PX424-X424-090814123518-B4S7DC_BZDET"><i class='bx bx-code-alt'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="education-child2">
+            <div class="education-details-year">
+                <h1>2022-2026</h1>
+            </div>
+            <div class="education-details">
+                <div class="education-details-information-school">
+                    <p class="education-details-information-school-name">Shree Gurukulam Hr.Sec.School</p>
+                    <p class="education-details-information-school-purpose">School Of Education | 2022</p>
+                </div>
+                <div class="education-details-information-college">
+                    <p class="education-details-information-college-name">Nandha Engineering College</p>
+                    <p class="education-details-information-college-purpose">Bachelor of Engineering | Artificial Intelligence & Data Science <br> Expected Graduation : [April , 2026]</p>
+                </div>
+                <div class="education-details-information-achievement">
+                    <p class="education-details-information-achievement-heading">Achievements</p>
+                    <p class="education-details-information-achievement-goals">
+                        Completed Specialized Training in <font>Frontend Development</font> , <br>
+                        currently pursuing <font>Full Stack Development</font> and enhancing skills in <font> <br>
+                        UI/UX Design</font>.
+                    </p>
+                </div>
+            </div>
+            <div class="education-more-aboutme">
+                <button>More About Me</button>
+            </div>
+        </div>
+    </div>
+    <div class="education-endline">
+        <hr>
+    </div>
+    <div class="skills">
+        <div class="skills-heading">
+            <h1>My <font>Skills</font></h1>
+        </div>
+        <div class="skills-container">
+            <div class="technical">
+                <div class="technical-title">
+                    <h1>Technical skills</h1>
+                </div>
+                <div class="html">
+                    <div class="html-logo">
+                        <i class='bx bxl-html5'></i><br>
+                    </div>
+                    <div class="html-name">HTML</div>
+                    <div class="container">
+                        <div class="outer">
+                            <div class="inner"></div>
+                        </div>
+                    </div>
+                    <div class="html-percentage">0%</div>
+                </div>
+                <script>
+                    var html=document.querySelector(".html-percentage")
+                    htmlcount=0
+                    setInterval(()=>{
+                        if(htmlcount==100){
+                            clearInterval()
+                        }
+                        else{
+                            htmlcount+=1
+                            html.innerHTML=htmlcount+"%"
+                        }
+                    },29)
+                </script>
+                <div class="css">
+                    <div class="css-logo">
+                        <i class='bx bxl-css3'></i><br>
+                    </div>
+                    <div class="css-name">CSS</div>
+                    <div class="outer">
+                        <div class="inner"></div>
+                    </div>
+                    <div class="css-percentage">0%</div>
+                </div>
+                <script>
+                    var css=document.querySelector(".css-percentage")
+                    csscount=0
+                    setInterval(()=>{
+                        if(csscount==90){
+                            clearInterval()
+                        }
+                        else{
+                            csscount+=1
+                            css.innerHTML=csscount+"%"
+                        }
+                    },34)
+                </script>
+                <div class="javascript">
+                    <div class="javascript-logo">
+                        <i class='bx bxl-javascript'></i><br>
+                    </div>
+                    <div class="javascript-name">Javascript</div>
+                    <div class="outer">
+                        <div class="inner"></div>
+                    </div>
+                    <div class="javascript-percentage">0%</div>
+                </div>
+                <script>
+                    var javascript=document.querySelector(".javascript-percentage")
+                    javascriptcount=0
+                    setInterval(()=>{
+                        if(javascriptcount==65){
+                            clearInterval
+                        }
+                        else{
+                            javascriptcount+=1
+                            javascript.innerHTML=javascriptcount+"%"
+                        }
+                    },45)
+                </script>
+                <div class="react">
+                    <div class="react-logo">
+                        <i class='bx bxl-react'></i><br>
+                    </div>
+                    <div class="react-name">React</div>
+                    <div class="outer">
+                        <div class="inner"></div>
+                    </div>
+                    <div class="react-percentage">0%</div>
+                </div>
+                <script>
+                    var react=document.querySelector(".react-percentage")
+                    reactcount=0
+                    setInterval(()=>{
+                        if(reactcount==10){
+                            clearInterval()
+                        }
+                        else{
+                            reactcount+=1
+                            react.innerHTML=reactcount+"%"
+                        }
+                    },80)
+                </script>
+                 <div class="python">
+                    <div class="python-logo">
+                        <i class='bx bxl-python'></i><br>
+                    </div>
+                    <div class="python-name">Python</div>
+                    <div class="outer">
+                        <div class="inner"></div>
+                    </div>
+                    <div class="python-percentage">0%</div>
+                </div>
+                <script>
+                    var python=document.querySelector(".python-percentage")
+                    pythoncount=0
+                    setInterval(()=>{
+                        if(pythoncount==70){
+                            clearInterval()
+                        }
+                        else{
+                            pythoncount+=1
+                            python.innerHTML=pythoncount+"%"
+                        }
+                    },28)
+                </script>
+                <div class="mysql">
+                    <div class="mysql-logo">
+                        <i class='fi fi-brands-mysql'></i><br>
+                    </div>
+                    <div class="mysql-name">My Sql</div>
+                    <div class="outer">
+                        <div class="inner"></div>
+                    </div>
+                    <div class="mysql-percentage">0%</div>
+                </div>
+                <script>
+                    var mysql=document.querySelector(".mysql-percentage")
+                    mysqlcount=0
+                    setInterval(()=>{
+                        if(mysqlcount==50){
+                            clearInterval()
+                        }
+                        else{
+                            mysqlcount+=1
+                            mysql.innerHTML=mysqlcount+"%"
+                        }
+                    },40)
+                </script>
+                <div class="mongodb">
+                    <div class="mongodb-logo">
+                        <i class='bx bxl-mongodb'></i><br>
+                    </div>
+                    <div class="mongodb-name">Mongodb</div>
+                    <div class="outer">
+                        <div class="inner"></div>
+                    </div>
+                    <div class="mongodb-percentage">0%</div>
+                </div>
+                <script>
+                    var mongodb=document.querySelector(".mongodb-percentage")
+                    mongodbcount=0
+                    setInterval(()=>{
+                        if(mongodbcount==5){
+                            clearInterval()
+                        }
+                        else{
+                            mongodbcount+=1
+                            mongodb.innerHTML=mongodbcount+"%"
+                        }
+                    },80)
+                </script>
+                <div class="nodejs">
+                    <div class="nodejs-logo">
+                        <i class='bx bxl-nodejs'></i><br>
+                    </div>
+                    <div class="nodejs-name">Nodejs</div>
+                    <div class="outer">
+                        <div class="inner"></div>
+                    </div>
+                    <div class="nodejs-percentage">0%</div>
+                </div>
+                <script>
+                    var nodejs=document.querySelector(".nodejs-percentage")
+                    nodejscount=0
+                    setInterval(()=>{
+                        if(nodejscount==5){
+                            clearInterval()
+                        }
+                        else{
+                            nodejscount+=1
+                            nodejs.innerHTML=nodejscount+"%"
+                        }
+                    },80)
+                </script>
+            </div>
+            <div class="professional">
+                <div class="professional-heading">
+                    <h1>Professional Skills</h1>
+                </div>
+                <div class="professional-skills">
+                    <div class="professional-child1">
+                        <div class="professional-communication">
+                            <div class="professional-communication-name">
+                                Communication
+                            </div>
+                            <div class="container">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div id="number">0%</div>
+                                    </div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100px" height="100px">
+                                    <defs>
+                                       <linearGradient id="GradientColor">
+                                          <stop offset="0%" stop-color="#0ef" />
+                                          <stop offset="100%" stop-color="#0ef" />
+                                       </linearGradient>
+                                    </defs>
+                                    <circle cx="50" cy="50" r="39" stroke-linecap="round" />
+                              </svg>
+                            </div>
+                        </div>
+                        <script>
+                            var value=document.querySelector("#number")
+                            count=0
+                            setInterval(()=>{
+                                if(count==95){
+                                    clearInterval()
+                                }
+                                else{
+                                    count+=1
+                                    value.innerHTML=count+"%"
+                                }
+                            },21)
+                        </script>
+                        <div class="professional-problemsolving">
+                            <div class="professional-problemsolving-name">
+                                Problem Solving
+                            </div>
+                            <div class="container">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div id="num">0%</div>
+                                    </div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100px" height="100px">
+                                    <defs>
+                                       <linearGradient id="GradientColor">
+                                          <stop offset="0%" stop-color="#0ef" />
+                                          <stop offset="100%" stop-color="#0ef" />
+                                       </linearGradient>
+                                    </defs>
+                                    <circle cx="50" cy="50" r="39" stroke-linecap="round" />
+                              </svg>
+                            </div>
+                        </div>
+                        <script>
+                            var a=document.querySelector("#num")
+                            b=0
+                            setInterval(()=>{
+                                if(b==80){
+                                    clearInterval()
+                                }
+                                else{
+                                    b+=1
+                                    a.innerHTML=b+"%"
+                                }
+                            },25)
+                        </script>
+                    </div>
+                    <div class="professional-child2">
+                        <div class="professional-creativity">
+                            <div class="professional-creativity-name">
+                                Creativiy
+                            </div>
+                            <div class="container">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div id="value">0%</div>
+                                    </div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100px" height="100px">
+                                    <defs>
+                                       <linearGradient id="GradientColor">
+                                          <stop offset="0%" stop-color="#0ef" />
+                                          <stop offset="100%" stop-color="#0ef" />
+                                       </linearGradient>
+                                    </defs>
+                                    <circle cx="50" cy="50" r="39" stroke-linecap="round" />
+                              </svg>
+                            </div>
+                        </div>
+                        <script>
+                            var num=document.querySelector("#value")
+                            counts=0
+                            setInterval(()=>{
+                                if(counts==70){
+                                    clearInterval()
+                                }
+                                else{
+                                    counts+=1
+                                    num.innerHTML=counts+"%"
+                                }
+                            },29)
+                        </script>
+                        <div class="professional-teamwork">
+                            <div class="professional-teamwork-name">
+                                Team work
+                            </div>
+                            <div class="container">
+                                <div class="outer">
+                                    <div class="inner">
+                                        <div id="one">0%</div>
+                                    </div>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100px" height="100px">
+                                    <defs>
+                                       <linearGradient id="GradientColor">
+                                          <stop offset="0%" stop-color="#0ef" />
+                                          <stop offset="100%" stop-color="#0ef" />
+                                       </linearGradient>
+                                    </defs>
+                                    <circle cx="50" cy="50" r="39" stroke-linecap="round" />
+                              </svg>
+                            </div>
+                        </div>
+                        <script>
+                            var tamil=document.querySelector("#one")
+                            two=0
+                            setInterval(()=>{
+                                if(two==90){
+                                    clearInterval()
+                                }
+                                else{
+                                    two+=1
+                                    tamil.innerHTML=two+"%"
+                                }
+                            },23)
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="skills-more-about-me">
+            <button>More About Me</button>
+        </div>      
+    </div>
+    <div class="skills-endline">
         <hr>
     </div>
 </body>
