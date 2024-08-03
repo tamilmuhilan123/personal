@@ -20,6 +20,8 @@
             padding: 0;
             box-sizing: border-box;
             scroll-behavior: smooth;
+            text-decoration: none;
+            list-style-type: none;
         }
         body{
             background-color: rgb(0, 0, 30);
@@ -29,6 +31,10 @@
             font-weight: 200;
             font-style: normal;
             color: white;
+        }
+        img{
+            max-width: 100%;
+            min-width: 100%;
         }
         .navbar{
             /* border: 3px solid #0ef; */
@@ -57,82 +63,103 @@
             text-decoration: none;
             margin: 20px;
             color: white;
+            font-weight: 500;
         }
         li a:hover{
             color: #0ef;
+            text-shadow: 0 0 20px #0ef;
         }
         li{
             margin-top: 30px;
         }
         .intro-myself{
-            /* border: 3px solid #0ef; */
-            width: 100%;
-            height: 100vh;
             display: flex;
-        }
-        .myself-intro{
-            /* border: 3px solid #0ef; */
-            width: 100%;
-            height: 100vh;
-        }
-        .myself-intro-words{
-            /* border: 3px solid #0ef; */
-            min-width: 100%;
-            max-width: 100%;
-            display: flex;
-            flex-direction: column;
-            margin-top: 250px;
-            align-items: center;
+            justify-content: space-around;
             flex-wrap: wrap;
         }
-        .myself-intro-words p{
-            /* border: 3px solid #0ef; */
-            font-size: 26px;
-            font-weight: 300;
-            /* min-width: 100%;
-            max-width: 100%; */
-            width: 420px;
-        }
-        .myself-intro-words font{
-            font-size: 45px;
-            font-weight: 600;
-        }
-        .tamil{
-            color: #0ef;
-            font-weight: 400;
-        }
-        .myself-image{
-            /* border: 3px solid #0ef; */
-            width: 100%;
-            height: 100vh;
-            margin-right: 80px;
-        }
-        .image{
-            /* border: 3px solid #0ef; */
-            max-width: 100%;
-            min-width: 100%;
-            max-height: 100vh;
-            min-height: 100vh;
+        .intro-myself-child1{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            flex-wrap: wrap;
+            /* border: 3px solid #0ef; */
+            padding: 0 20px;
+            width: 500px;
+            flex-grow: 1;
         }
-        .image img{
-            min-width: 100%;
-            max-width: 100%;
-            border-radius: 50%;
+        .intro-myself-child2{
+            flex-grow: 1;
+        }
+        .intro-myself-child1 p{
+            font-size: 20px;
+            font-weight: 300;
+        }   
+        .intro-myself-child1 font{
+            font-size: 45px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .intro-myself-child2-image img{
             border: 3px solid #0ef;
+            border-radius: 50%;
+            box-shadow: 0 0 40px #0ef;
+        }
+        .tamil{
+            color: #0ef;
+            font-size: 22px;
+            font-weight: 500;
+            text-shadow: 0 0 40px #0ef;
+        }
+        .intro-myself-child1-socialmedia{
+            margin-top: 10px;
+            display: flex;
+            /* border: 3px solid #0ef; */
+            width: 300px;
+            margin-bottom: 20px;
+        }
+        .intro-myself-child1-socialmedia a{
+            margin-right: 30px;
+            flex-grow: 1;
+            flex-basis: 20%;
+        }
+        .intro-myself-child1-socialmedia a i{
+            border: 2px solid #0ef;
+            padding: 10px;
+            border-radius: 50%;
+            color: #0ef;
+            font-size: 20px;
+        }
+        .intro-myself-child1-socialmedia a i:hover{
+            background-color: #0ef;
+            color: black;
+            box-shadow: 0 0 20px #0ef;
+        }
+        .download-cv button{
+            padding: 8px;
+            background-color: #0ef;
+            color: black;
+            border: 3px solid #0ef;
+            border-radius: 20px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        @media screen and (max-width:1020px) {
+            .intro-myself-child1{
+                flex-grow: 1;
+            }
+            .intro-myself-child2{
+                flex-grow: 0;
+                width: 60%;
+            }
+            .intro-myself{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
         }
         @media screen and (max-width:750px) {
-            .intro-myself{
-                display: block;
-            }
-            .myself-intro{
-                height: fit-content;
-            }
-            .myself-image{
-                height: fit-content;
+            .intro-myself-child2{
+                width: 100%;
+                flex-grow: 1;
             }
         }
     </style>
@@ -155,23 +182,33 @@
             </div>
         </div>
         <div class="intro-myself">
-            <div class="myself-intro">
-                <div class="myself-intro-words">
-                    <p>Hello It's Me <br><font>Tamil Muhilan</font><br>And I'm a <label class="tamil"></label></p>
+            <div class="intro-myself-child1">
+                <p>Hello It's Me <br><font>Tamil Muhilan !</font><br>And I'm a <label class="tamil"></label></p>
+                <p>A passionate frontend developer and aspiring <br>full stack developer
+                     Explore my portfolio to see some of my experiences <br>
+                </p>
+                <div class="intro-myself-child1-socialmedia">
+                    <a href="https://wa.me/+919952663264"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://www.instagram.com/tamil__016/"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.linkedin.com/in/tamilmuhilan4/"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://github.com/tamilmuhilan123"><i class='bx bxl-github' ></i></a>
+                </div>
+                <div class="download-cv">
+                    <a href="#"><button>Download cv</button></a>
                 </div>
             </div>
-            <div class="myself-image">
-                <div class="image">
+            <div class="intro-myself-child2">
+                <div class="intro-myself-child2-image">
                     <img src="port.png">
                 </div>
             </div>
         </div>
         <script>
-            var typed=new Typed(".tamil",{
+            var type=new Typed(".tamil",{
                 strings:["Front-end Developer"],
                 typeSpeed:100,
                 typeDelay:100,
-                BackDelay:1000,
+                backDelay:1000,
                 loop:true
             })
         </script>
