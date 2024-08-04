@@ -1061,6 +1061,93 @@
                 margin-top: 50px;
             }
         }
+        .project-title{
+            margin-top: 15px;
+            text-align: center;
+        }
+        .project-title h1{
+            font-weight: 400;
+            font-size: 45px;
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-underline-offset: 10px;
+        }
+        .projects-more-about-me{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .projects-more-about-me button{
+            background-color: #0ef;
+            padding: 10px;
+            border-radius: 40px;
+            cursor: pointer;
+            border: 3px solid #0ef;
+            font-weight: 600;
+        }
+        .projects-more-about-me button:hover{
+            box-shadow: 0 0 20px #0ef;
+        }
+        .projects-endline{
+            margin-top: 20px;
+            width: 80%;
+            margin-left: 10%;
+        }
+        .contact-me-title{
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact-me-title h1{
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 40px;
+            text-decoration: underline;
+            text-underline-offset: 10px;
+        }
+        .contact-me-para{
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px;
+        }
+        .contact-me-para p{
+            font-size: 20px;
+            font-weight: 300;
+            text-transform: capitalize;
+        }
+        .contact-me-touch{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .contact-me-touch p{
+            font-size: 25px;
+            font-weight: 500;
+            color: #0ef;
+            text-shadow: 0 0 20px #0ef;
+        }
+        .contact-me-social-platform{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            padding: 10px;
+        }
+        .contact-me-social-platform i{
+            font-size: 50px;
+            color: #0ef;
+        }
+        .contact-me-social-platform p{
+            font-size: 20px;
+        }
+        @media screen and (max-width:450px) {
+            .contact-me-social-platform{
+                display: block;
+                margin-top: 15px;
+            }
+            .contact-me-social-platform p{
+                margin-bottom: 30px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1538,6 +1625,49 @@
     </div>
     <div class="skills-endline">
         <hr>
+    </div>
+    <div class="pro">
+        <div class="project-title">
+            <h1>Projects</h1>
+        </div>
+    </div>
+    <div class="projects-more-about-me">
+        <button>More About Me</button>
+    </div>
+    <div class="projects-endline">
+        <hr>
+    </div>
+    <div class="contact-me">
+        <div class="contact-me-title">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="contact-me-para">
+            <p>I'm always excited to connect with like-minded professionals and discuss new opportunities. <br>
+                I'd love to hear from you! Whether you have a job opportunity, project idea, or just want to say hi, feel free to <br>
+                contact me. And I'll get back to you as soon as possible.</p>
+        </div>
+        <div class="contact-me-touch">
+            <p>Get In Touch With Me</p>
+        </div>
+        <div class="contact-me-social-platform">
+            <div class="contact-me-through-media-phone">
+                <a href="#"><i class='bx bx-phone-call' style='color:#00eeff' ></i></a>
+                <p class="phone">Phone</p>
+                <!-- <p class="number">9952663264</p> -->
+            </div>
+            <div class="contact-me-through-media-gmail">
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"><i class='bx bx-envelope'></i></a>
+                <p class="mail">Gmail</p>
+            </div>
+            <div class="contact-me-through-media-linkedin">
+                <a href="https://www.linkedin.com/in/tamilmuhilan4/"><i class='bx bxl-linkedin-square' style='color:#00eeff' ></i></a>
+                <p>LinkedIn</p>
+            </div>
+            <div class="contact-me-through-media-instagram">
+                <a href="https://www.instagram.com/tamil__016/"><i class='bx bxl-instagram' style='color:#00eeff' ></i></a>
+                <p>Instagram</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
