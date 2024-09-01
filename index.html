@@ -42,6 +42,7 @@
             height: 100px;
             margin-top: 20px;
             display: flex;
+            position: relative;
         }
         .navbar-logo{
             /* border: 3px solid #0ef; */
@@ -160,6 +161,27 @@
             display: none;
             cursor: pointer;
         }
+        #sidebar{
+            position: absolute;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: grey;
+            height: 100vh;
+            width: 200px;
+            top: 0;
+            text-align: center;
+            display: none;
+        }
+        #menu{
+            display: none;
+        }
+        #close{
+            position: absolute;
+            right: 0;
+            margin: 10px;
+            font-size: 25px;
+        }
         @media screen and (max-width:1020px) {
             .intro-myself-child1{
                 flex-grow: 1;
@@ -186,11 +208,35 @@
                 /* border: 3px solid #0ef; */
                 position: relative;
             }
+            #menu{
+                display: block;
+            }
             .material-symbols-outlined{
                 display: block;
                 position: absolute;
                 left: 80%;
                 top: 30px;
+            }
+            #menu{
+                display: block;
+                position: absolute;
+                right: 0;
+                margin-right: 100px;
+                font-size: 30px;
+            }
+            #sidebar{
+                display: none;
+                width: 100%;
+            }
+            #sidebar li{
+                display: block;
+            }
+            #close{
+                position: absolute;
+                right: 0;
+                margin-right: 30px;
+                margin-top: 10px;
+                font-size: 25px;
             }
         }
         @media screen and (max-width:420px) {
@@ -209,6 +255,12 @@
             }
             .navbar-logo{
                 margin-left: 10%;
+            }
+            #menu{
+                margin-right: 30px;
+            }
+            .sidebar-main{
+                display: block;
             }
         }
         .about-me-heading{
@@ -364,6 +416,8 @@
             font-size: 50px;
             font-weight: 400;
             text-transform: uppercase;
+            text-decoration: underline;
+            text-underline-offset: 10px;
         }
         .education-heading-icons{
             margin-top: 10px; 
@@ -1148,6 +1202,18 @@
                 margin-bottom: 30px;
             }
         }
+        .professional-communication-name{
+            margin-bottom: 10px;
+        }
+        .professional-problemsolving-name{
+            margin-bottom: 10px;
+        }
+        .professional-creativity-name{
+            margin-bottom: 10px;
+        }
+        .professional-teamwork-name{
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -1158,17 +1224,40 @@
             </div>
             <div class="list">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <span class="material-symbols-outlined">menu</span>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#aboutme">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class='bx bx-menu' id="menu" onclick="abc()"></i>
                 </ul>
+                <div class="sublist">
+                    <ul id="sidebar">
+                        <i class='bx bx-x' id="close" onclick="cba()"></i>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#aboutme">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="intro-myself">
+        <script>
+            var menuicon=document.getElementById("menu")
+            var closeicon=document.getElementById("close")
+            var side=document.getElementById("sidebar")
+            function abc(){
+                side.style.display="block"
+                menubar.style.display="none"
+            }
+            function cba(){
+                side.style.display="none"
+            }
+        </script>
+        <div class="intro-myself" id="Home">
             <div class="intro-myself-child1">
                 <p class="important">Hello It's Me <br><font>Tamil Muhilan...</font><br>And I'm a <label class="tamil"></label></p>
                 <p class="para">A passionate frontend developer and aspiring <br>full stack developer
@@ -1206,7 +1295,7 @@
     <div class="about-me-heading">
         <h1>About <font>Me</font></h1>
     </div>
-    <div class="about-me">
+    <div class="about-me" id="aboutme">
         <div class="intro-image">
             <img src="aboutimg.jpg" height="600px">
         </div>
@@ -1227,14 +1316,14 @@
                 </div>
             </div>
             <div class="about-me-more-aboutme">
-                <button>More About Me</button>
+                <button><a href="#education">More About Me</a></button>
             </div>
         </div>
     </div>
     <div class="about-me-endline">
         <hr>
     </div>
-    <div class="education">
+    <div class="education" id="education">
         <div class="education-child1">
             <div class="education-heading">
                 <h2>Education</h2>
@@ -1268,14 +1357,14 @@
                 </div>
             </div>
             <div class="education-more-aboutme">
-                <button>More About Me</button>
+                <button><a href="#skills">More About Me</a></button>
             </div>
         </div>
     </div>
     <div class="education-endline">
         <hr>
     </div>
-    <div class="skills">
+    <div class="skills" id="skills">
         <div class="skills-heading">
             <h1>My <font>Skills</font></h1>
         </div>
@@ -1620,24 +1709,24 @@
             </div>
         </div>  
         <div class="skills-more-about-me">
-            <button>More About Me</button>
+            <button><a href="#project">More About Me</a></button>
         </div>      
     </div>
     <div class="skills-endline">
         <hr>
     </div>
-    <div class="pro">
+    <div class="project" id="project">
         <div class="project-title">
             <h1>Projects</h1>
         </div>
     </div>
     <div class="projects-more-about-me">
-        <button>More About Me</button>
+        <button><a href="#contact">More About Me</a></button>
     </div>
     <div class="projects-endline">
         <hr>
     </div>
-    <div class="contact-me">
+    <div class="contact-me" id="contact">
         <div class="contact-me-title">
             <h1>Contact Me</h1>
         </div>
