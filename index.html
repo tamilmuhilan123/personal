@@ -1147,6 +1147,108 @@
             width: 80%;
             margin-left: 10%;
         }
+        .project-1-heading{
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+            text-underline-offset: 10px;
+            font-weight: 500;
+        }
+        .main-projects{
+            margin: 20px 120px;
+        }
+        .project-1{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .project-image{
+            width: 500px;
+            flex-basis: 50%; 
+        }
+        .project-image img{
+            border: 2px solid white;
+            border-radius: 20px;
+        }
+        .project-description ul{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            flex-basis: 50%;
+            flex-grow: 1;
+            justify-content: center;
+        }
+        .project-description ul li{
+            list-style-type: disc;
+        }
+        @media screen and (max-width:1088px) {
+            .main-projects{
+                margin: 20px 0px;
+            }
+            .project-1{
+                display: flex;
+                height: 300px;
+                justify-content: center;
+            }
+        }
+        @media screen and (max-width:950px) {
+            .project-description ul{
+                display: none;
+            }
+        }
+        @media screen and (max-width:750px) {
+            .main-projects{
+                margin: 20px 0px;
+                margin-left: 5px;
+            }
+            .project-1{
+                display: block;
+            }
+            .project-image{
+                width: 80%;
+                height: 100%;
+                margin-left: 50px;
+            }
+            .project-image img{
+                height: 100%;
+            }
+        }
+        @media screen and (max-width:450px) {
+            .main-projects{
+                margin: 20px 0px;
+            }
+            .project-1{
+                display: block;
+                height: 200px;
+            }
+            .project-image{
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+            }
+            .project-image img{
+                height: 100%;
+            }
+        }
+        @media screen and (max-width:350px) {
+            .main-projects{
+                margin: 20px 0px;
+                margin-left: 5px;
+            }
+            .project-1{
+                display: block;
+                height: 200px;
+            }
+            .project-image{
+                width: 100%;
+                height: 100%;
+            }
+            .project-image img{
+                height: 100%;
+            }
+        }
         .contact-me-title{
             text-align: center;
             margin-top: 20px;
@@ -1718,6 +1820,24 @@
     <div class="project" id="project">
         <div class="project-title">
             <h1>Projects</h1>
+        </div>
+        <div class="main-projects">
+            <div class="project-1-heading">
+                <p>Portfolio</p>
+            </div>
+            <div class="project-1">
+                <div class="project-image">
+                    <img src="project1.png">
+                </div>
+                <div class="project-description">
+                    <ul>
+                        <li>HTML5, CSS3, JavaScript</li>
+                        <li>CSS Frameworks (Bootstrap)</li>  
+                        <li>Responsive design with media queries</li>    
+                        <li>Version control with Git and GitHub for project tracking</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <div class="projects-more-about-me">
